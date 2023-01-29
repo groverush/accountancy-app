@@ -57,6 +57,7 @@ const signUp = asyncHandler(async (req, res) => {
       email: client.email,
       token: generateToken(client._id),
     })
+    console.log(client)
   } else {
     res.status(400)
     throw new Error("Invalid client data")
@@ -78,6 +79,7 @@ const loginIn = asyncHandler(async (req, res) => {
       email: client.email,
       token: generateToken(client._id),
     })
+    console.log(client.token)
   } else {
     res.status(400)
     throw new Error("Invalid client credentials")
