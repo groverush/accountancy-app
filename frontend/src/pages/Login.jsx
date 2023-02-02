@@ -2,25 +2,6 @@ import { useState } from "react"
 import axios from "axios"
 
 const Login = () => {
-//   const [formData, setFormData] = useState({
-//     email: "",
-//     password: "",
-//   })
-//   console.log(formData)
-//   function handleSubmit(event) {
-//     event.preventDefault()
-//     console.log("Handle submit")
-//   }
-
-//   function handleChange(event) {
-//     setFormData((prevFormData) => {
-//       const { value, name } = event.target
-//       return {
-//         ...prevFormData,
-//         [name]: value,
-//       }
-//     })
-//   }
 const [data, setData] = useState({
   email: "",
   password: ""
@@ -42,7 +23,7 @@ const handleSubmit = async (e)=>{
   }
 }
   return (
-    <div>
+    <div className="field">
       <form onSubmit={handleSubmit}>
         <input
           type="text"
