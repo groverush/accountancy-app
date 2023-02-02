@@ -11,7 +11,7 @@ const {
 } = require("../controllers/clientController")
 const { protect } = require("../middleware/authMiddleware")
 
-router.post("/", signUp)
+router.post("/signUp", signUp)
 router.post("/login", loginIn)
 router.get("/me", protect, getMe)
 
