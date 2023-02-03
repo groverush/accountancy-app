@@ -2,9 +2,9 @@ import React from "react"
 import { Link } from "react-router-dom"
 const Navbar = () => {
   return (
-    <div className="items-center">
-      <nav className="container flex w-full border-black bg-amber-100">
-        <ul className="bg-slate-500 max-w-xl ">
+    <div>
+      <nav className="container flex w-full bg-amber-100">
+        <ul className="flex bg-slate-500 max-w-xl ">
           <li className="bg-gray-800 p-2 ">
             <Link to={`/login`}>Log In</Link>
           </li>
